@@ -1,0 +1,64 @@
+.sign-UP {
+  width: 100%;
+  position: absolute;
+  left: 500px;
+  padding: 0 15%;
+  transition: 0.5s;
+
+  @media (max-width: 425px) {
+    padding: 0 5%;
+  }
+  @media (max-width: 375.98px) {
+    padding: 0 ;
+  }
+
+  &__term {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media (min-height: 700px) {
+      margin-bottom: 45px;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 375.98px) {
+      margin-bottom: 15px;
+    }
+
+    &--label {
+      width: 15px;
+      height: 15px;
+      border: 1px #a7507fa6 solid;
+      margin-right: 1rem;
+      position: relative;
+
+      &::after {
+        content: "\2713";
+        color: #6d1a46;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+    }
+    &--checkbox {
+      display: none;
+    }
+    &--checkbox:checked ~ &--label::after {
+      opacity: 1;
+    }
+    &--text {
+      color: #a7507fa6;
+      font-size: 1.6rem;
+
+      & > a {
+        color: #a7507fa6;
+      }
+    }
+  }
+}

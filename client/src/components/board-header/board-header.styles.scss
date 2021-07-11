@@ -1,0 +1,11 @@
+.board-header {
+  height: 50px;
+  padding: 5px 30px;
+
+  display: flex;
+
+  &__invite {
+    background-color: white;
+    padding: 5px;
+  }
+}

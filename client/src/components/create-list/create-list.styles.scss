@@ -1,0 +1,15 @@
+.create-list {
+  width: 275px;
+  height: auto;
+
+  &__form {
+    width: 100%;
+    background-color: #f3f3f3;
+    box-shadow: 3px 5px 10px #00000029;
+    padding: 15px;
+  }
+
+  &__btns {
+    display: flex;
+  }
+}

@@ -1,0 +1,19 @@
+.create-team {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.5s;
+
+  &__title {
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: #a8a8a8;
+    margin-bottom: 2rem;
+  }
+}

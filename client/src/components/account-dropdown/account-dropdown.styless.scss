@@ -1,0 +1,94 @@
+.account-dropdown {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px #00000029;
+  z-index: 10000;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px #c8c8c8 solid;
+    padding: 8px 10px;
+    &--title {
+    }
+
+    &--close {
+      justify-self: flex-end;
+      cursor: pointer;
+    }
+  }
+  &__account {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 10px;
+    border-bottom: 0.5px #c8c8c8 solid;
+
+    &--image {
+      width: 46px;
+      height: 46px;
+      border-radius: 7px;
+      background-color: #c58eac;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &--letter {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &--info {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &--name {
+      font-size: 1.4rem;
+    }
+
+    &--email {
+      font-size: 1.2rem;
+      color: #777777;
+    }
+  }
+
+  &__nav {
+    &--list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &--item {
+      cursor: pointer;
+
+      & > a {
+        display: block;
+        padding: 10px 10px;
+      }
+
+      &:hover {
+        background-color: #f7f7f7;
+      }
+
+      &:last-of-type {
+        padding: 13px 10px;
+        border-top: 0.5px #c8c8c8 solid;
+      }
+    }
+  }
+}

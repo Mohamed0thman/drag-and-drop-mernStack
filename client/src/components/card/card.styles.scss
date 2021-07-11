@@ -1,0 +1,31 @@
+.card {
+  width: 100%;
+  min-height: 100px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 2rem;
+
+  position: relative;
+
+  &.dragging-card {
+    background-color: black;
+
+    & > * {
+      visibility: hidden;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &--title {
+      overflow-x: hidden;
+      overflow-wrap: break-word;
+    }
+
+    &--icon {
+      cursor: pointer;
+    }
+  }
+}

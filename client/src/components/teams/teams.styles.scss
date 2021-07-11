@@ -1,0 +1,15 @@
+.teams {
+  margin-top: 2rem;
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  &__icon {
+    margin-right: 1rem;
+  }
+  &__collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}

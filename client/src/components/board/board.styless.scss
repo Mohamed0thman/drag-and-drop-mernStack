@@ -1,0 +1,14 @@
+.board {
+  width: 235px;
+  height: 145px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px #00000029;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__name {
+    margin: 15px 0 0 15px;
+    font-weight: bold;
+  }
+}

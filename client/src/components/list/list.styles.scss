@@ -1,0 +1,31 @@
+.list {
+  position: relative;
+  width: 275px;
+  height: auto;
+  margin-right: 4rem;
+  background-color: #f3f3f3;
+  box-shadow: 3px 5px 10px #00000029;
+  padding: 15px;
+
+  display: block;
+
+  &.dragging-list {
+    background-color: black;
+    & > * {
+      visibility: hidden;
+    }
+  }
+  &.isDraggingList {
+    position: absolute;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    &--icon {
+      cursor: pointer;
+    }
+  }
+}

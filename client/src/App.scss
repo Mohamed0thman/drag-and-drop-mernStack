@@ -1,0 +1,12 @@
+.app {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    height: 98vh;
+  }
+
+  &__main {
+    height: 100%;
+  }
+}

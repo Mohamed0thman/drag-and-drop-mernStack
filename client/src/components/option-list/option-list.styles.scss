@@ -1,0 +1,20 @@
+.option-list {
+  position: absolute;
+  right: -100px;
+  top: 30px;
+  background-color: white;
+  list-style: none;
+  z-index: 10000;
+
+  &__item {
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #999999;
+    }
+  }
+  &__icon {
+    margin-right: 1rem;
+  }
+}

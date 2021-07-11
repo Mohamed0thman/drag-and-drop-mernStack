@@ -1,0 +1,55 @@
+.profile {
+  background-color: white;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0rem auto;
+    padding: 30px 30%;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 2rem;
+  }
+
+  &__bio {
+    &--input {
+      width: 100%;
+      min-height: 200px;
+      max-height: 500px;
+      resize: vertical;
+      font-size: 1.8rem;
+      background: #ffffff93;
+      border: none;
+      color: #a7507f;
+      padding: 10px 10px 10px 10px;
+      border-radius: 25px;
+      box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.2);
+
+      &::placeholder {
+        color: #c58eac;
+        text-transform: capitalize;
+        font-size: 2rem;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+
+      &.unactive {
+        box-shadow: none;
+        border: 1px solid #d2cbcb;
+      }
+    }
+    &--label {
+      margin-bottom: 1rem;
+    }
+  }
+  &__btn {
+    margin-top: 2rem;
+  }
+}

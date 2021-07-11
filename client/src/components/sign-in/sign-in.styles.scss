@@ -1,0 +1,31 @@
+.sign-in {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 15%;
+  transition: 0.5s;
+  @media (max-width: 425px) {
+    padding: 0 5%;
+  }
+  @media (max-width: 375.98px) {
+    padding: 0;
+  }
+
+  &__forgot-password {
+    font-size: 1.4rem;
+    color: #a7507f;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    @media (min-height: 700px) {
+      margin-bottom: 45px;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 375.98px) {
+      margin-bottom: 15px;
+    }
+  }
+}
